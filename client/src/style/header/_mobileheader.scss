@@ -1,0 +1,29 @@
+.mobile-header {
+  max-width: 100%;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  border: 1px solid rgb(189, 189, 189);
+  &__menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  &__menu-item {
+    list-style: none;
+    font-size: 2.5rem;
+    padding: 1rem 0;
+  }
+  &__link {
+    text-decoration: none;
+    color: #3e867c;
+  }
+
+  @media (min-width: 499px) {
+    display: none;
+  }
+}
