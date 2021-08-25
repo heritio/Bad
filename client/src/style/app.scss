@@ -22,6 +22,7 @@ html {
   --light-grey: hsl(240°, 2%, 92%);
   --bright-red-error: hsl(0°, 90%, 57%);
   --headings-text: "Ibarra Real Nova", serif;
+  --border-color: hsl(240°, 2%, 85%);
 }
 body {
 }
@@ -45,3 +46,5 @@ body {
 @import "./header/mobileheader";
 @import "./searchbar/searchbar";
 @import "./homestyle/homestyle";
+@import "./feedItems/feeditem";
+@import "./feedItems/feedsuggestion";

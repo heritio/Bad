@@ -1,0 +1,19 @@
+.feed-suggestion {
+  max-width: 15rem;
+  width: 15rem;
+  margin-bottom: 1.5rem;
+  overflow-y: auto;
+  border: 1px solid black;
+  background-size: fit-content;
+  background-position: center;
+  background-color: black;
+  color: white;
+  border-radius: 1rem;
+  &__avatar {
+    width: 9.5rem;
+    height: 9.5rem;
+
+    margin: 2rem 0.5rem;
+    border-radius: 50%;
+  }
+}

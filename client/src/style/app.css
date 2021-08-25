@@ -20,6 +20,7 @@ html {
   --light-grey: hsl(240°, 2%, 92%);
   --bright-red-error: hsl(0°, 90%, 57%);
   --headings-text: "Ibarra Real Nova", serif;
+  --border-color: hsl(240°, 2%, 85%);
 }
 
 .App {
@@ -53,7 +54,7 @@ html {
   top: 0;
   left: 0;
   height: 100vh;
-  border: 1px solid #bedbe7;
+  border: 1px solid #d8d8da;
   border-bottom-right-radius: 1rem;
   border-top-right-radius: 1rem;
   padding: 0 2rem;
@@ -83,7 +84,7 @@ html {
   padding: 1rem 0;
   color: #a0a826;
   cursor: pointer;
-  border-bottom: 1px solid black;
+  margin-top: 2.5rem;
 }
 
 .desktop-header__menu-item h4 {
@@ -95,9 +96,9 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -112,7 +113,18 @@ html {
 
 .desktop-header__menu-item-circle {
   font-size: 4.5rem;
-  color: #81a826;
+  margin: 1.5rem 0;
+  background-color: #3e867c;
+  border-radius: 10rem;
+  padding: 1.5rem;
+}
+
+.desktop-header__menu-item-circle .fa-plus-circle {
+  color: white;
+}
+
+.desktop-header__menu-item-circle h4 {
+  color: white;
 }
 
 @media (max-width: 500px) {
@@ -129,7 +141,7 @@ html {
   background-color: white;
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
-  border: 1px solid #bdbdbd;
+  border: 1px solid #d8d8da;
 }
 
 .mobile-header__menu {
@@ -167,6 +179,7 @@ html {
 .search-default {
   color: gray;
   width: 100%;
+  max-width: 21.5rem;
   margin-left: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -178,6 +191,47 @@ html {
       -ms-flex-align: center;
           align-items: center;
   padding: 0 2rem;
+  position: relative;
+}
+
+.search-default__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.search-default__input {
+  cursor: pointer;
+  font-size: 1.5rem;
+  padding: 0.6rem;
+  outline: none;
+}
+
+.search-default__list {
+  width: 21.5rem;
+  margin-top: 3rem;
+  display: none;
+  position: absolute;
+  background-color: white;
+  color: var(--dark-blue-color);
+  border: 1px solid #b1afaf;
+}
+
+.search-default__item {
+  list-style: none;
+  margin: 0 1;
+  font-size: 1.4rem;
+  padding: 0 0.8rem;
+}
+
+.search-default__icon {
+  margin: 0.5rem;
+  cursor: pointer;
+  font-size: 2rem;
 }
 
 .home-page {
@@ -190,6 +244,11 @@ html {
           flex-direction: column;
   max-width: 100%;
   width: 100%;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .home-page__header {
@@ -212,12 +271,150 @@ html {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  border-bottom: 1px solid #b1b1b1;
+  border-bottom: 1px solid #d8d8da;
   height: 5.6rem;
 }
 
+.home-page__title {
+  padding: 1rem;
+}
+
+.home-page__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .home-page__feed-stream {
-  margin-top: 4rem;
+  margin-top: 2rem;
   padding: 0 3.5rem;
+}
+
+.home-page__feed-suggestions {
+  margin-top: 1rem;
+  position: fixed;
+  right: 0;
+  background-color: white;
+  margin-right: 10rem;
+  max-width: 9rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+@media (max-width: 935px) {
+  .home-page__feed-suggestions {
+    display: none;
+  }
+}
+
+.feed-item {
+  color: black;
+  margin: 2rem auto 2rem 0;
+  width: 50rem;
+  max-width: 100%;
+}
+
+.feed-item__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  border-top: 1px solid #d8d8da;
+  max-width: 100%;
+  padding: 1.5rem 0;
+}
+
+.feed-item__avatar {
+  width: 9.5rem;
+  height: 9.5rem;
+  border-radius: 50%;
+  margin: 0 1rem 1rem 0;
+}
+
+.feed-item__avatar-info {
+  height: 4.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.feed-item__display-name {
+  font-size: 1.4rem;
+}
+
+.feed-item__display-handler {
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+  color: var(--grayish-dark-blue);
+}
+
+.feed-item__text-content {
+  font-size: 1.7rem;
+  line-height: 1.6;
+}
+
+.feed-item__feed-img {
+  max-width: 100%;
+  margin-top: 1.5rem;
+}
+
+.feed-item__footer {
+  margin: 1rem 0;
+}
+
+.feed-item__footer-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.feed-item__footer-icon-item {
+  list-style: none;
+  font-size: 2.5rem;
+}
+
+.feed-item__footer-icon-item:nth-child(1) {
+  margin-right: 0.5rem;
+}
+
+.feed-item__likes-amount {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.feed-item__likes-amount-nr {
+  margin-right: 0.5rem;
+}
+
+.feed-suggestion {
+  max-width: 15rem;
+  width: 15rem;
+  margin-bottom: 1.5rem;
+  overflow-y: auto;
+  border: 1px solid black;
+  background-size: fit-content;
+  background-position: center;
+  background-color: black;
+  color: white;
+  border-radius: 1rem;
+}
+
+.feed-suggestion__avatar {
+  width: 9.5rem;
+  height: 9.5rem;
+  margin: 2rem 0.5rem;
+  border-radius: 50%;
 }
 /*# sourceMappingURL=app.css.map */

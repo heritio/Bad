@@ -3,6 +3,12 @@
   flex-direction: column;
   max-width: 100%;
   width: 100%;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 
   &__header {
     top: 0;
@@ -14,13 +20,31 @@
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
-    border-bottom: 1px solid rgb(177, 177, 177);
+    border-bottom: 1px solid hsl(240°, 2%, 85%);
     height: 5.6rem;
   }
   &__title {
+    padding: 1rem;
+  }
+  &__content {
+    display: flex;
   }
   &__feed-stream {
-    margin-top: 4rem;
+    margin-top: 2rem;
     padding: 0 3.5rem;
+  }
+
+  &__feed-suggestions {
+    margin-top: 1rem;
+    position: fixed;
+    right: 0;
+    background-color: white;
+    margin-right: 10rem;
+    max-width: 9rem;
+    width: fit-content;
+
+    @media (max-width: 935px) {
+      display: none;
+    }
   }
 }
