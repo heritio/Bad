@@ -5,7 +5,7 @@ import DesktopHeader from "./components/header/DesktopHeader";
 import MobileHeader from "./components/header/MobileHeader";
 
 import HomepageContainer from "./pages/Homepage/HomepageContainer";
-
+import Notificationspage from "./pages/Notificationspage/Notificationspage";
 export default function App() {
   return (
     <div className="App">
@@ -15,8 +15,11 @@ export default function App() {
       </div>
 
       <Router className="main">
-        <Route to="/">
+        <Route exact path="/">
           <HomepageContainer />
+        </Route>
+        <Route exact path="/notification">
+          <Notificationspage />
         </Route>
       </Router>
     </div>

@@ -49,6 +49,7 @@ export default function FeedItem(props) {
               type="text"
               placeholder="Comment here"
             />
+            <i class="fas fa-paper-plane"></i>
           </div>
           <div className="feed-item__comments-inner-container">
             {props.post.comments.map((comment, index) => {
