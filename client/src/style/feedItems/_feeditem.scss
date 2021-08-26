@@ -3,13 +3,16 @@
   margin: 2rem auto 2rem 0;
   width: 50rem;
   max-width: 100%;
+
   &__header {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    border-top: 1px solid hsl(240°, 2%, 85%);
+    border-top: 1px solid hsl(240°, 2%, 88%);
     max-width: 100%;
     padding: 1.5rem 0;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
   }
   &__avatar {
     width: 9.5rem;
@@ -49,14 +52,85 @@
   &__footer-icon-item {
     list-style: none;
     font-size: 2.5rem;
+    cursor: pointer;
+    padding: 0 0.5rem;
+    border-radius: 0.3rem;
     &:nth-child(1) {
-      margin-right: 0.5rem;
+      margin-right: 1rem;
+    }
+    &:active {
+      background-color: hsl(167°, 36%, 54%);
     }
   }
   &__likes-amount {
     display: flex;
+    font-size: 1.4rem;
+    margin-left: 0.8rem;
+    margin-top: 1rem;
   }
   &__likes-amount-nr {
     margin-right: 0.5rem;
+  }
+  &__likes-amount-label {
+    color: rgb(216, 78, 24);
+    font-weight: bold;
+  }
+  &__comments-container {
+  }
+  &__comments-form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  &__comments-user {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+  }
+  &__comments-input {
+    padding: 0 1rem;
+    width: 100%;
+    max-width: 100%;
+    height: 4rem;
+    border-radius: 10rem;
+    outline: none;
+    background-color: rgb(221, 220, 220);
+    border: 1px solid rgb(187, 187, 187);
+    font-size: 1.5rem;
+    &:focus {
+      background-color: white;
+    }
+  }
+  &__comments-inner-container {
+    height: fit-content;
+    margin: 1rem 0;
+    background-color: rgb(238, 238, 238);
+  }
+  &__comment-item {
+    font-size: 1.5rem;
+    height: fit-content;
+    display: flex;
+    margin: 1.5rem 0;
+    padding: 1rem 0;
+    border-bottom: 1px solid rgb(196, 192, 192);
+  }
+  &__comment-item-img {
+    height: 4rem;
+    width: 4rem;
+    margin-right: 1rem;
+    border-radius: 50%;
+  }
+  &__comment-item-info {
+    width: fit-content;
+    max-width: 100%;
+  }
+  &__comment-item-displayname {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0.5rem 0;
+  }
+  &__comment-item-comment-text {
+    margin-top: 1rem;
+    margin-right: 2rem;
   }
 }

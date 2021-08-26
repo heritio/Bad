@@ -25,21 +25,26 @@ html {
   --border-color: hsl(240°, 2%, 85%);
 }
 body {
+  max-width: 100%;
 }
 
 .App {
   max-width: 100%;
-  display: grid;
-  grid-template-columns: auto 1fr;
-  grid-template-rows: auto;
-  grid-template-areas: "navbar main";
+  display: flex;
+  flex-direction: column;
+  @media (min-width: 499px) {
+    flex-direction: row;
+  }
 }
 
 .App .main {
-  grid-area: main;
+  flex-basis: 8;
+  max-width: 100%;
+  font-family: "Public Sans", sans-serif;
 }
 .App .navbar {
-  grid-area: navbar;
+  flex-basis: 2;
+  max-width: 100%;
 }
 
 @import "./header/desktopheader";

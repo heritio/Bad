@@ -4,7 +4,7 @@ export default function FeedSuggestion(props) {
   return (
     <div
       className="feed-suggestion"
-      style={{ backgroundImage: props.suggestion.userBanner }}
+      style={{ backgroundImage: `url(${props.suggestion.userBanner})` }}
     >
       <img
         className="feed-suggestion__avatar"

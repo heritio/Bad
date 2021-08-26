@@ -50,6 +50,26 @@ export default function HomepageContainer() {
       userAvatar:
         "https://images.pexels.com/photos/3155588/pexels-photo-3155588.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
       likes: "250",
+      comments: [
+        {
+          displayName: "TigerFist4",
+          user: "Badb",
+          handler: "@ouhandler",
+          commentText:
+            "I like the way you did this, Its the best work to date, Thanks for sharing",
+          userAvatar:
+            "https://images.pexels.com/photos/3155588/pexels-photo-3155588.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        },
+        {
+          displayName: "TigerFist4",
+          user: "Badb",
+          handler: "@ouhandler",
+          commentText:
+            "I like the way you did this, Its the best work to date, Thanks for sharing",
+          userAvatar:
+            "https://images.pexels.com/photos/3155588/pexels-photo-3155588.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        },
+      ],
     },
     {
       displayName: "TigerFist4",
@@ -63,6 +83,35 @@ export default function HomepageContainer() {
       userAvatar:
         "https://images.pexels.com/photos/3155588/pexels-photo-3155588.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
       likes: "250",
+      comments: [
+        {
+          displayName: "TigerFist4",
+          user: "Badb",
+          handler: "@ouhandler",
+          commentText:
+            "I like the way you did this, Its the best work to date, Thanks for sharing",
+          userAvatar:
+            "https://images.pexels.com/photos/3155588/pexels-photo-3155588.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        },
+        {
+          displayName: "TigerFist4",
+          user: "Badb",
+          handler: "@ouhandler",
+          commentText:
+            "I like the way you did this, Its the best work to date, Thanks for sharing",
+          userAvatar:
+            "https://images.pexels.com/photos/3155588/pexels-photo-3155588.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        },
+        {
+          displayName: "TigerFist4",
+          user: "Badb",
+          handler: "@ouhandler",
+          commentText:
+            "I like the way you did this, Its the best work to date, Thanks for sharing",
+          userAvatar:
+            "https://images.pexels.com/photos/3155588/pexels-photo-3155588.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        },
+      ],
     },
     {
       displayName: "TigerFist4",
@@ -76,6 +125,35 @@ export default function HomepageContainer() {
       userAvatar:
         "https://images.pexels.com/photos/3155588/pexels-photo-3155588.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
       likes: "250",
+      comments: [
+        {
+          displayName: "TigerFist4",
+          user: "Badb",
+          handler: "@ouhandler",
+          commentText:
+            "I like the way you did this, Its the best work to date, Thanks for sharing",
+          userAvatar:
+            "https://images.pexels.com/photos/3155588/pexels-photo-3155588.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        },
+        {
+          displayName: "TigerFist4",
+          user: "Badb",
+          handler: "@ouhandler",
+          commentText:
+            "I like the way you did this, Its the best work to date, Thanks for sharing",
+          userAvatar:
+            "https://images.pexels.com/photos/3155588/pexels-photo-3155588.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        },
+        {
+          displayName: "TigerFist4",
+          user: "Badb",
+          handler: "@ouhandler",
+          commentText:
+            " I lgfdgdf gfdgdfgdfgike the way you did this, ItI lgfdgdf gfdgdfgdfgike the way you did this, ItI lgfdgdf gfdgdfgdfgike the way you did this, ItI lgfdgdf gfdgdfgdfgike the way you did this, Its the best work to date, Thanks for sharing",
+          userAvatar:
+            "https://images.pexels.com/photos/3155588/pexels-photo-3155588.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        },
+      ],
     },
   ];
   return (

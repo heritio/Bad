@@ -3,17 +3,36 @@
   width: 15rem;
   margin-bottom: 1.5rem;
   overflow-y: auto;
-  border: 1px solid black;
-  background-size: fit-content;
+  border: 1px solid rgb(240, 121, 74);
+  background-size: cover;
   background-position: center;
-  background-color: black;
+  background-repeat: no-repeat;
+  padding: 0.5rem 0;
   color: white;
+  -webkit-text-stroke: 1px #000000;
   border-radius: 1rem;
+  cursor: pointer;
   &__avatar {
-    width: 9.5rem;
-    height: 9.5rem;
+    width: 5.5rem;
+    height: 5.5rem;
 
     margin: 2rem 0.5rem;
-    border-radius: 50%;
+    border-radius: 2.5rem;
+    border: 1px solid white;
+  }
+  &__avatar-info {
+    padding: 0 0.5rem;
+  }
+  &__display-name {
+    margin-bottom: 0.5rem;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: white;
+  }
+  &__display-handler {
+    margin-bottom: 0.5rem;
+    font-size: 1.8rem;
+    color: white;
+    font-weight: bold;
   }
 }

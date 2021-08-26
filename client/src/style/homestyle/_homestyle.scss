@@ -13,24 +13,30 @@
   &__header {
     top: 0;
     max-width: 100%;
-    width: 100%;
-    position: sticky;
+    width: 60%;
+    position: fixed;
     background-color: white;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: space-between;
     border-bottom: 1px solid hsl(240°, 2%, 85%);
     height: 5.6rem;
+    @media (max-width: 499px) {
+      width: 100%;
+    }
   }
   &__title {
     padding: 1rem;
   }
   &__content {
     display: flex;
+    @media (max-width: 499px) {
+      display: block;
+    }
   }
   &__feed-stream {
-    margin-top: 2rem;
+    margin-top: 5rem;
     padding: 0 3.5rem;
   }
 
