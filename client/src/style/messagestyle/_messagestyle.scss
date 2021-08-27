@@ -1,0 +1,43 @@
+.message-page {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  width: 100%;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  &__header {
+    top: 0;
+    max-width: 100%;
+    width: 60%;
+    position: fixed;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid hsl(240°, 2%, 85%);
+    height: 5.6rem;
+    @media (max-width: 499px) {
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+  &__title {
+    padding: 0 1rem;
+    max-width: 100%;
+  }
+  &__content {
+    margin-top: 9rem;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    @media (max-width: 499px) {
+      display: block;
+    }
+  }
+}

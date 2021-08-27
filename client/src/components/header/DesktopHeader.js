@@ -21,7 +21,7 @@ export default function DesktopHeader() {
           </a>
         </li>
         <li className="desktop-header__menu-item">
-          <a href="/messages" className="desktop-header__link">
+          <a href="/my/messages" className="desktop-header__link">
             {" "}
             <i class="far fa-comment-alt"></i>
             <h4>Messages</h4>

@@ -20,7 +20,7 @@ export default function MobileHeader() {
           </a>
         </li>
         <li className="mobile-header__menu-item">
-          <a href="/messages" className="mobile-header__link">
+          <a href="/my/messages" className="mobile-header__link">
             <i class="far fa-comment-alt"></i>
           </a>
         </li>
