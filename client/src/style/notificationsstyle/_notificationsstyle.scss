@@ -11,7 +11,12 @@
   user-select: none;
 
   .active {
-    border-bottom: 3px solid rgb(8, 90, 90);
+    border-bottom: 3px solid rgb(21, 175, 175);
+
+    h4,
+    i {
+      color: rgb(35, 172, 172);
+    }
   }
   &__header {
     top: 0;
@@ -71,5 +76,33 @@
         font-size: 2rem;
       }
     }
+  }
+  //notifications-item
+  &__item {
+    display: flex;
+    margin: 3rem 0 1rem 1rem;
+  }
+
+  &__item-img {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+  }
+  &__item-info {
+    font-size: 1.5rem;
+  }
+  &__item-user-info {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__item-display-name {
+    margin-left: 1rem;
+  }
+  &__item-user-handler {
+    margin-left: 1rem;
+  }
+  &__item-text-content {
+    margin-left: 1rem;
+    margin-top: 1rem;
   }
 }

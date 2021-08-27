@@ -1,5 +1,15 @@
 import React from "react";
-
-export default function Subscribed() {
-  return <div>Subscribed</div>;
+import NotificationItem from "./NotificationItem";
+export default function Subscribed(props) {
+  return (
+    <div>
+      {props.ourNotifications.map((notification) => {
+        if (notification.type === "subscribed") {
+          return <NotificationItem item={notification} />;
+        } else {
+          return null;
+        }
+      })}
+    </div>
+  );
 }

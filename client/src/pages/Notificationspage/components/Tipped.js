@@ -1,5 +1,15 @@
 import React from "react";
-
-export default function Tipped() {
-  return <div>Tipped</div>;
+import NotificationItem from "./NotificationItem";
+export default function Tipped(props) {
+  return (
+    <div>
+      {props.ourNotifications.map((notification) => {
+        if (notification.type === "tipped") {
+          return <NotificationItem item={notification} />;
+        } else {
+          return null;
+        }
+      })}
+    </div>
+  );
 }

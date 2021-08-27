@@ -598,7 +598,12 @@ body {
 }
 
 .notification-page .active {
-  border-bottom: 3px solid #085a5a;
+  border-bottom: 3px solid #15afaf;
+}
+
+.notification-page .active h4,
+.notification-page .active i {
+  color: #23acac;
 }
 
 .notification-page__header {
@@ -691,5 +696,43 @@ body {
 .notification-page__link-item a i {
   margin: 1rem;
   font-size: 2rem;
+}
+
+.notification-page__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 3rem 0 1rem 1rem;
+}
+
+.notification-page__item-img {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+}
+
+.notification-page__item-info {
+  font-size: 1.5rem;
+}
+
+.notification-page__item-user-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.notification-page__item-display-name {
+  margin-left: 1rem;
+}
+
+.notification-page__item-user-handler {
+  margin-left: 1rem;
+}
+
+.notification-page__item-text-content {
+  margin-left: 1rem;
+  margin-top: 1rem;
 }
 /*# sourceMappingURL=app.css.map */

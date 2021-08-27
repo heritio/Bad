@@ -1,5 +1,15 @@
 import React from "react";
-
-export default function Interactions() {
-  return <div>Interactions</div>;
+import NotificationItem from "./NotificationItem";
+export default function Interactions(props) {
+  return (
+    <div>
+      {props.ourNotifications.map((notification) => {
+        if (notification.type === "interraction") {
+          return <NotificationItem item={notification} />;
+        } else {
+          return null;
+        }
+      })}
+    </div>
+  );
 }

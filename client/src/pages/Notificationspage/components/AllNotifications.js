@@ -1,5 +1,11 @@
 import React from "react";
-
-export default function AllNotifications() {
-  return <div>Notifications</div>;
+import NotificationItem from "./NotificationItem";
+export default function AllNotifications(props) {
+  return (
+    <div>
+      {props.ourNotifications.map((notification) => {
+        return <NotificationItem item={notification} />;
+      })}
+    </div>
+  );
 }
