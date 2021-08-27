@@ -18,7 +18,7 @@ export default function App() {
         <Route exact path="/">
           <HomepageContainer />
         </Route>
-        <Route exact path="/notification">
+        <Route path="/my/notification">
           <Notificationspage />
         </Route>
       </Router>

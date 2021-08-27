@@ -14,7 +14,7 @@ export default function DesktopHeader() {
           </a>
         </li>
         <li className="desktop-header__menu-item">
-          <a href="/notification" className="desktop-header__link">
+          <a href="/my/notification" className="desktop-header__link">
             {" "}
             <i class="far fa-bell"></i>
             <h4>Notification</h4>

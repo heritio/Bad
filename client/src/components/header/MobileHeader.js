@@ -10,7 +10,7 @@ export default function MobileHeader() {
           </a>
         </li>
         <li className="mobile-header__menu-item">
-          <a href="/notification" className="mobile-header__link">
+          <a href="/my/notification" className="mobile-header__link">
             <i class="far fa-bell"></i>
           </a>
         </li>
