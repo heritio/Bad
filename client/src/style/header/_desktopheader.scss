@@ -42,6 +42,9 @@
     h4 {
       color: #3d8177;
       font-size: 2rem;
+      @media (max-width: 850px) {
+        display: none;
+      }
     }
   }
   &__menu-item-circle {
