@@ -148,7 +148,7 @@ body {
   color: white;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 550px) {
   .desktop-header {
     display: none;
   }
@@ -192,7 +192,7 @@ body {
   color: #3e867c;
 }
 
-@media (min-width: 499px) {
+@media (min-width: 550px) {
   .mobile-header {
     display: none;
   }
@@ -759,6 +759,7 @@ body {
   -ms-user-select: none;
   user-select: none;
   position: relative;
+  height: 100vh;
 }
 
 .message-page__header {
@@ -784,7 +785,7 @@ body {
   height: 5.6rem;
 }
 
-@media (max-width: 499px) {
+@media (max-width: 550px) {
   .message-page__header {
     width: 100%;
     max-width: 100%;
@@ -820,7 +821,7 @@ body {
 }
 
 .message-page__messages {
-  height: 85vh;
+  height: calc(100vh - 5.6rem);
   width: 20%;
   overflow-y: scroll;
   display: -webkit-box;
@@ -907,8 +908,15 @@ body {
 }
 
 .message-page__chatt-box {
-  height: 35rem;
+  height: calc(100vh - 11.1rem);
   width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   overflow-y: scroll;
 }
 
@@ -932,12 +940,14 @@ body {
 @media (max-width: 850px) {
   .message-page__chatt-box {
     width: calc(100vw - 15rem);
+    height: calc(100vh - 17.8rem);
   }
 }
 
 @media (max-width: 550px) {
   .message-page__chatt-box {
     width: 100%;
+    padding-bottom: 6.5rem;
   }
 }
 
@@ -971,38 +981,43 @@ body {
 }
 
 .message-page__input-container {
-  position: fixed;
   background-color: white;
   bottom: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
-  max-width: 100%;
-  margin-bottom: 5rem;
+  width: 50%;
+  max-width: 60%;
+  margin-top: auto;
+  position: fixed;
+  height: auto;
 }
 
 @media (max-width: 850px) {
   .message-page__input-container {
     width: calc(100vw - 15rem);
+    max-width: 100%;
   }
 }
 
 @media (max-width: 550px) {
   .message-page__input-container {
     width: 100%;
+    margin-bottom: 5.1rem;
   }
 }
 
 .message-page__input-box {
+  resize: none;
   outline: none;
   border: none;
   background-color: #dadada;
   border-bottom-left-radius: 0.5rem;
   border-top-left-radius: 0.5rem;
   height: 5.5rem;
-  width: 45%;
+  width: 100%;
   max-width: 100%;
+  padding: 0.5rem;
 }
 
 @media (max-width: 850px) {
@@ -1051,5 +1066,111 @@ body {
 
 .message-page__recipient-message-date {
   margin: 0.5rem auto 0.5rem 1rem;
+}
+
+.post-page {
+  width: calc(100vw - 20.9rem);
+}
+
+@media (max-width: 850px) {
+  .post-page {
+    width: calc(100vw - 15rem);
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 551px) {
+  .post-page {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+.post-page__header {
+  top: 0;
+  width: calc(100vw - 20.9rem);
+  max-width: 100%;
+  position: fixed;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 1px solid #d8d8da;
+  height: 5.6rem;
+}
+
+@media (max-width: 850px) {
+  .post-page__header {
+    width: calc(100vw - 15rem);
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 551px) {
+  .post-page__header {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+.post-page__btn {
+  color: gray;
+  border: none;
+  border-radius: 10rem;
+  background: #bebebe;
+  padding: 1rem;
+  font-weight: bold;
+}
+
+.post-page__textarea {
+  resize: none;
+  min-height: 10rem;
+  height: 4rem;
+  margin-top: 5.6rem;
+  width: 100%;
+  max-width: 100%;
+  padding: 1rem 0.5rem;
+  border: none;
+  outline-color: #acace7;
+}
+
+.post-page__actions {
+  color: blue;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.post-page__action {
+  margin: 1rem 1rem;
+  border-radius: 50%;
+  background: #686892;
+  width: 3rem;
+  height: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.post-page__action:hover {
+  background-color: silver;
 }
 /*# sourceMappingURL=app.css.map */
